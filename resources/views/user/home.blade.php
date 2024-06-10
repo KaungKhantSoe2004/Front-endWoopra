@@ -151,7 +151,7 @@
 
 
 
-<div class=" my-md-4 my-1 animationContainer d-flex justify-content-between ">
+<div class=" my-3 animationContainer d-flex justify-content-between ">
 
 <div class=" eachAnimation">
 
@@ -159,7 +159,7 @@
 
         <small class=" text-start" style=" font-weight: 600">Online Users</small>
         <div style=" font-weight: 650; color: black" class=" my-md-1 my-0" id="userCount">3.987K</div>
-     <div class=" w-100" style=" font-size:smaller "> +159% from last month</div>
+     <div class=" w-100" style=" font-size:x-small "> +159% from last month</div>
     </div>
 
     <div class=" my-md-4 my-2 smallAnimationCard py-md-2 py-0 px-1 position-relative " >
