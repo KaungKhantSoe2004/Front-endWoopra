@@ -101,7 +101,8 @@ marquee > div {
 }
 
 .homeLogos {
-    width: 100%;
+    width: 20px;
+    height: 40px;
     cursor: pointer;
 }
 .homeLogosText {
