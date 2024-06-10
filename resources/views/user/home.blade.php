@@ -28,9 +28,9 @@
 
 {{-- bigCard --}}
 
-<div class=" mt-3 mx-3 homeBigCardContainer">
+<div class=" mt-3 mx-md-3 mx-1 homeBigCardContainer">
 
-<div class=" py-4 px-4 homeBigCard" style=" width: 100%; background-color: black; border-radius: 10px">
+<div class=" py-3 px-md-4 px-2 homeBigCard" style=" width: 100%; background-color: black; border-radius: 10px">
 
 <h6 class=" text-white">Wallet Account</h6>
 
@@ -47,7 +47,7 @@
 </div>
 
 
-<div class=" homeCasesContainer d-flex mt-3 ">
+<div class=" homeCasesContainer d-flex mt-md-3 mt-1 ">
     <div class=" d-inline revenueContainer mr-3 pr-3" style=" border-right: solid 1px rgb(241, 187, 14);" >
         <div class=" text-white-50" style=" font-weight: 500">Order Revenue</div>
         <div class=" text-white">0</div>
@@ -67,40 +67,42 @@
 
 
 
-<div class="homeIconContainer mt-4">
+<div class="homeIconContainer px-0 w-100  mt-md-4 mt-2">
 
-<div class=" col-12 row  d-flex">
+<div class=" col-12 row p-0 m-0 d-flex">
 
-    <div id="withdrawalOpenModalBtn" class=" col-3 eachIcon">
+    <div id="withdrawalOpenModalBtn" class="  col-3 eachIcon px-0 ">
         <div class=" d-flex  justify-content-center">
             <img id="withdrawl" src="{{asset('icons/Change them into Red/Withdrawal logo.png')}}" alt="" class=" homeLogos">
         </div>
-    <div class=" text-center homeLogosText">Withdrawl</div>
+    <div class=" text-md-center text-center homeLogosText">Withdrawl</div>
     </div>
 
-<div class=" col-3 eachIcon">
+<div class=" col-3 eachIcon  ">
     <div class=" d-flex  justify-content-center">
         <img id="deposit" src="{{asset('icons/Change them into Red/Deposit logo.png')}}" alt="" class=" homeLogos">
     </div>
-<div class=" text-center homeLogosText ">Deposit</div>
+<div class="  text-center homeLogosText ">Deposit</div>
 </div>
 
-<div class=" col-3 eachIcon">
-    <div class=" d-flex  justify-content-center">
+<div class=" col-3 eachIcon px-0  ">
+    <div class="  d-flex  justify-content-center">
         <img id="customerServiceCenter" src="{{asset('icons/Change them into Red/Customer service logo.png')}}" alt="" class=" homeLogos">
     </div>
-<div class=" d-flex justify-content-center ">
-    <div class=" text-center homeLogosText longText ">Customer Service Center</div>
-</div>
+
+    <div class=" w-100  " style=" ">
+        <div class=" text-md-center text-center homeLogosText longText ">Customer Service Center</div>
+    </div>
+
 
 </div>
 
-<div class=" col-3 eachIcon">
+<div class=" col-3 eachIcon mx-0  ">
     <div class=" d-flex  justify-content-center">
         <img id="transactionNotice" src="{{asset('icons/Change them into Red/transaction logo.png')}}" alt="" class=" homeLogos">
     </div>
     <div class=" d-flex justify-content-center">
-<div class=" text-center  homeLogosText longText">Transaction Notice</div>
+<div class=" text-md-center text-start  homeLogosText longText">Transaction Notice</div>
     </div>
 </div>
 
@@ -109,35 +111,35 @@
 
 
 
-<div class=" mt-4 col-12  d-flex justify-content-around">
+<div class=" mt-md-4 mt-2 col-12 m-0 p-0  row d-flex ">
 
-    <div class=" col-3 eachIcon">
+    <div class=" col-3  eachIcon px-0 ">
         <div class=" d-flex  justify-content-center">
             <img id="campaign" src="{{asset('icons/Change them into Red/Campaign logo.png')}}" alt=""  class=" homeLogos">
         </div>
     <div class="text-center homeLogosText">Campaign</div>
     </div>
 
-<div class="  col-3 eachIcon">
+<div class="  col-3 eachIcon px-0 ">
     <div class=" d-flex  justify-content-center">
         <img id="illustrate" src="{{asset('icons/Change them into Red/Illustrate logo.png')}}" alt="" class=" homeLogos" >
     </div>
 <div class=" text-center homeLogosText ">Illustrate</div>
 </div>
 
-<div class="px-md-5 px-0 col-3 eachIcon">
+<div class="px-md-5 px-0 col-3 eachIcon  ">
     <div class=" d-flex  justify-content-center">
         <img id="faqs" src="{{asset('icons/Change them into Red/FAQS Logo.png')}}" alt="" class=" homeLogos">
     </div>
 <div class=" homeLogosText  text-center ">FAQS</div>
 </div>
 
-<div class=" col-3 px-md-2 px-0  eachIcon">
+<div class=" col-3 px-md-2 px-0 eachIcon px-0 ">
     <div class=" d-flex  justify-content-center">
         <img id="companyProfile" style="curosr:pointer" src="{{asset('icons/Change them into Red/Company Profile logo.png')}}" alt="" class=" homeLogos" >
     </div>
-    <div class=" d-flex justify-content-center">
-<div class=" homeLogosText longText text-center ">Company Profile</div>
+    <div class=" w-100 d-flex justify-content-center px-0">
+<div class=" w-100 homeLogosText longText text-md-center text-start px-0 overflow-visible  ">Company Profile</div>
     </div>
 </div>
 
@@ -149,7 +151,7 @@
 
 
 
-<div class=" my-4 animationContainer d-flex justify-content-between ">
+<div class=" my-md-4 my-1 animationContainer d-flex justify-content-between ">
 
 <div class=" eachAnimation">
 
@@ -225,9 +227,9 @@
 
 <div class=" vipContainer">
 
-    <h5 class=" text-start" style=" color:black ;font-weight: 700">VIP levels</h5>
+    <h5 class=" m-0 p-0 text-start " style=" color:black ;font-weight: 700">VIP levels</h5>
 
-<button id="vipLevelBtn" class=" py-3 px-3 my-3 w-100" style=" background-color:rgb(241, 187, 14); border:none; border-radius:6px;">
+<button id="vipLevelBtn" class=" py-3  px-3 my-md-3 my-1 w-100" style=" background-color:rgb(241, 187, 14); border:none; border-radius:6px;">
 
     <div class=" float-left">
         <img src="{{asset('icons/No need to edit/vip1.png')}}" style="width: 40px; height: 40px" alt="">
@@ -237,9 +239,10 @@
 
 <div class=" float-right">
 
-    <h6 class="   d-inline mt-5" style=" color:black; font-weight: 700">Enter</h6>
+   <h6 class="   d-inline mt-5" style=" color:black; font-weight: 700">Enter</h6>
     {{-- &nbsp; --}}
     <img src="{{asset('icons/No need to edit/forward.png')}}" style="width: 20px; height: 20px" alt="">
+
 </div>
 
 </button>

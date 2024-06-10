@@ -101,15 +101,20 @@ marquee > div {
 }
 
 .homeLogos {
-    width: 40px;
-    height: 40px;
+    width: 100%;
     cursor: pointer;
 }
 .homeLogosText {
     font-size: medium;
+    width: 100%;
+    margin: 0;
 }
 .longText {
     width: 100%;
+    /* width: 100%; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .footer {
     bottom: 1px;
@@ -207,8 +212,8 @@ marquee > div {
 }
 @media (max-width: 1300px) {
     .mainContainer {
-        margin-left: 3px;
-        margin-right: 3px;
+        margin-left: 1px;
+        margin-right: 1px;
     }
     .footer {
         bottom: 1px;
@@ -246,7 +251,8 @@ marquee > div {
         top: -60px;
     }
     .homeLogosText {
-        font-size: smaller;
+        font-size: x-small;
+        margin: 0;
     }
     .recordsPrice {
         font-size: smaller;
