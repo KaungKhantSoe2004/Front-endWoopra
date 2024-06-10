@@ -1,0 +1,28 @@
+.registerLogoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+    height: 100px;
+    background-color: #f8f8f8;
+}
+.registerContainer {
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+.registerBody {
+    background-color: #f7f7f7;
+}
+input:focus {
+    outline: none;
+}
+.semibold {
+    font-weight: 620;
+}
+
+@media (max-width: 1300px) {
+    .registerContainer {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+}

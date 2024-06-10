@@ -1,0 +1,359 @@
+.loginBody {
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+}
+
+/* start */
+
+.team-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.team-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+/* end */
+
+/* Modal backdrop */
+.custom-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal content */
+.custom-modal-content {
+    /* overflow-y: scroll; */
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 310px; /* Max width of the modal */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* height: 400px; */
+    border-radius: 10px;
+    text-align: center; /* Center text */
+    transform: scale(0);
+    animation: scaleIn 1.2s forwards;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* end */
+
+/* Modal backdrop */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Black with opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.4s;
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 380px; /* Max width of the modal */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    text-align: center; /* Center text */
+    transform: scale(0);
+    animation: scaleIn 0.4s forwards;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.myOverflow {
+    overflow-y: scroll;
+}
+
+/* eligible only 18 years and upward */
+
+/* Modal styles */
+.unique-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.unique-modal-content {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    /* text-align: center; */
+}
+
+/* Button styles */
+.unique-modal-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.unique-close-btn {
+    background-color: #dc3545;
+}
+
+/* end */
+
+.loginContainer {
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+
+.loginCard {
+    background-color: #fff;
+}
+
+.logo {
+    width: 40%;
+}
+
+.firstIcon {
+    width: 40px;
+    height: 40px;
+
+    background-color: #000;
+}
+.englishContainer {
+    background-color: #000;
+    border-radius: 19px;
+    margin-bottom: 2px;
+    height: 35px;
+}
+.earth {
+    width: 27px;
+    height: 27px;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 320px;
+}
+.loginForm {
+    background-color: #fff;
+}
+.loginInput {
+    background-color: #00000005;
+    /* z-index: 2; */
+    border-bottom: 3px;
+    /* box-shadow: 0 10px 10px #00000005; */
+}
+.inputLogin {
+    background-color: #00000005;
+    background: var(--c71c2eb4);
+    /* box-shadow: 0 10px 10px #00000005; */
+    outline: none;
+}
+.updateInputContainer {
+    background-color: white;
+    /* z-index: 2; */
+    border-bottom: 3px;
+}
+.updateInput {
+    background-color: white;
+    background: var(--c71c2eb4);
+    /* box-shadow: 0 10px 10px #00000005; */
+    outline: none;
+}
+
+.password-input::-webkit-contacts-auto-fill-button,
+.password-input::-webkit-credentials-auto-fill-button {
+    display: none !important;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+
+.loginBtn {
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+}
+.registerBtn {
+    border-radius: 5px;
+    color: #000;
+    background-color: rgb(241, 187, 14);
+}
+.eye {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.fp-link {
+    width: 100%;
+    height: 1.875rem;
+    font-size: 0.875rem;
+    line-height: 1.875rem;
+    text-align: center;
+    color: #000;
+    font-weight: 400;
+    margin: 0.5rem 0px 0.9375rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+.fp-link1 {
+    width: 100%;
+    height: 1.875rem;
+    font-size: 0.995rem;
+    line-height: 1.875rem;
+    text-align: center;
+    color: #000;
+    font-weight: 400;
+    margin: 0.5rem 0px 0.9375rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.semibold {
+    font-weight: 620;
+}
+
+.profileContainer {
+    background-color: #f8f8f8;
+}
+.vipInfoContainer {
+    z-index: 4;
+    top: 0;
+}
+.vpInfo {
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.24);
+    background: linear-gradient(
+        102deg,
+        rgba(255, 255, 255, 0.23) 15.9%,
+        rgba(255, 255, 255, 0.11) 105.94%
+    );
+    /* height: 11.75rem; */
+    /* border: 1px solid #ccc;  */
+    /* Optional padding */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* background: transparent; */
+}
+.currentLevel {
+    border-radius: 0px 0px 10px 10px;
+}
+.alreadyActivated {
+    padding: 0.3rem 0.5rem;
+
+    text-align: center;
+
+    font-weight: 700;
+    background-size: 100% 100%;
+    width: max-content;
+}
+.orderFooter {
+    background-color: #f3f9f9; /* Nearly white box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border-radius: 20px;
+    border: solid 0.1px rgb(214, 210, 210);
+    left: 30vh;
+    right: 30vh;
+}
+
+@media (max-width: 1300px) {
+    .loginContainer {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    .copyText {
+        font-size: x-small;
+    }
+    .orderFooter {
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .modal-content {
+        max-width: 300px;
+    }
+    .copyText {
+        font-size: x-small;
+    }
+}

@@ -1,0 +1,263 @@
+/* start */
+body.modal-open {
+    overflow: hidden; /* Stop page scrolling when modal is open */
+}
+.img-modal {
+    display: block; /* Show the modal as soon as the page loads */
+    position: fixed;
+    z-index: 98;
+    /* border-radius: 20px; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-modal-content {
+    position: relative;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* end */
+/* start */
+
+.withdrawal-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.withdrawal-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+/* end */
+
+/* start */
+
+.transaction-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.transaction-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+/* end */
+
+.mainContainer {
+    /* background-color: red; */
+    overflow: hidden;
+    margin-left: 35vh;
+    margin-right: 35vh;
+}
+
+marquee > div {
+    font-weight: 600;
+}
+
+.homeLogos {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.homeLogosText {
+    font-size: medium;
+}
+.longText {
+    width: 100%;
+}
+.footer {
+    bottom: 1px;
+    left: 32vh;
+    right: 32vh;
+    /* width: 46%; */
+    box-shadow: 0px 10px -14px -14px #fff;
+    z-index: 100;
+    /* background-color: white; */
+    /* background-color: red; */
+    background-color: #f1efef;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.recoredHeader {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.customBtn {
+    width: 100px;
+    height: 100px;
+    top: -60px;
+}
+.notiContainer {
+}
+.eachMessageText {
+    width: 100%; /* Adjust the width as needed */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* border: 1px solid #000; Optional: to visualize the container */
+}
+.profileLogos {
+    width: 60px;
+    height: 60px;
+}
+.depositLogo {
+    width: 70px;
+    height: 70px;
+}
+.smallAnimationCard {
+    border: solid 1.5px rgb(243, 187, 6);
+    border-radius: 14px;
+    width: 170px;
+    overflow: hidden;
+}
+.stick {
+    position: absolute;
+    right: 10%;
+    top: 0px;
+    width: 70px;
+    height: 76px;
+    font-weight: bolder;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+    border-width: 0px;
+
+    /* display: none; */
+    /* animation: slideIn 1.2s ease; */
+}
+.animationContainer {
+    content: "";
+    animation: words 10s infinite;
+    text-overflow: hidden;
+    height: 100%;
+}
+.coverDiv {
+    z-index: 12;
+    animation: slideIn 1.8s ease;
+    /* height: 3000px; */
+}
+.unfold {
+    z-index: 5;
+}
+@keyframes slideIn {
+    from {
+        right: 0;
+        /* background-color: rgb(102, 15, 15); */
+    }
+    to {
+        right: -100%;
+    }
+}
+.largeAnimationCard {
+    border: solid 1.5px rgb(204, 160, 18);
+    border-radius: 14px;
+    width: 140px;
+}
+.optimizeDemand {
+    font-weight: 600;
+}
+@media (max-width: 1300px) {
+    .mainContainer {
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    .footer {
+        bottom: 1px;
+        left: 0;
+        right: 0;
+        /* width: 98vh; */
+        z-index: 5;
+        box-shadow: 0px 10px -14px -14px #fff;
+        background-color: #fff;
+        /* background-color: rgb(); */
+    }
+}
+
+@media (max-width: 600px) {
+    /* .homeLogos {
+        width: 32px;
+        height: 32px;
+    }. */
+    .descriptionOrder {
+        font-size: xx-small;
+    }
+    .paymentText {
+        font-size: smaller;
+    }
+    .optimizeDemand {
+        font-size: x-small;
+    }
+    .largeAnimationCard {
+        width: 110px;
+        height: 170px;
+    }
+    .customBtn {
+        width: 100px;
+        height: 100px;
+        top: -60px;
+    }
+    .homeLogosText {
+        font-size: smaller;
+    }
+    .recordsPrice {
+        font-size: smaller;
+    }
+    .smallAnimationCard {
+        border: solid 1.5px rgb(243, 187, 6);
+        border-radius: 14px;
+        width: 140px;
+    }
+    .stick {
+        width: 50px;
+        height: 70px;
+    }
+}
